@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="row">
+            <div class="calculator-main">
+
+                <Label for="num1">
+                    <input class="calculator-input" id="num1" placeholder="0">
+                </Label>
+
+                <div class="symbols-button">
+                    <button class="clearing-feature-button" onclick="ClearDisplay('clr')">C</button>
+                    <button class="delete-button" onclick="deletelast('DEL')">DEL</button>
+                    <button class="percent-button" onclick="numbers('%')">%</button>
+                    <button class="divide-button" onclick="numbers('/')">/</button>
+                </div>
+
+                <div class="calculator">
+                    <button onclick="numbers('7')">7</button>
+                    <button onclick="numbers('8')">8</button>
+                    <button onclick="numbers('9')">9</button>
+                    <button class="multiply-button" onclick="numbers('*')">*</button>
+                </div>
+
+                <div class="calculator">
+                    <button onclick="numbers('4')">4</button>
+                    <button onclick="numbers('5')">5</button>
+                    <button onclick="numbers('6')">6</button>
+                    <button onclick="numbers('-')">-</button>
+                </div>
+
+                <div class="calculator">
+                    <button onclick="numbers('1')">1</button>
+                    <button onclick="numbers('2')">2</button>
+                    <button onclick="numbers('3')">3</button>
+                    <button onclick="numbers('+')">+</button>
+                </div>
+
+                <div class="calculator">
+                    <button class="zero-button" onclick="numbers('0')">0</button>
+                    <button class="decimal-button" onclick="numbers('.')">.</button>
+                    <button class="result-button" onclick="calculate()">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
